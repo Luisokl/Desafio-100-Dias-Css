@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    background: -webkit-linear-gradient(bottom left, #EEBE6C 0%, #CA7C4E 100%);
+    border-radius: 5px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 299px;
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+}
+
+.profile {
+    float: left;
+    width: 200px;
+    height: 320px;
+    text-align: center;
+}
+
+.image {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 38px auto 0 auto;
+}
+img {
+    display: block;
+    border-radius: 50%;
+    background-color: #F5E8DF;
+    cursor: pointer;
+}
+
+.circle-1 {
+    position: absolute;
+    box-sizing: border-box;
+    width: 76px;
+    height: 76px;
+    top: -3px;
+    left: -3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000 #000 #000 transparent;
+    border-radius: 50%;
+    transition: all 1.5s ease-in-out;
+}
+.circle-1:hover {
+    transform: rotate(360deg);
+}
+
+.circle-2 {
+    position: absolute;
+    box-sizing: border-box;
+    width: 82px;
+    height: 82px;
+    top: -6px;
+    left: -6px;
+    border-color: #000 #000 #000 transparent;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    transition: all 1.5s ease-in-out;
+}
+.circle-2:hover {
+    transform: rotate(-360deg);
+}
+
+.name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.job {
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.actions {
+    margin-top: 33px;
+}
+
+.btn {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin: 0 auto 10px auto;
+    background: none;
+    border: 1px solid ;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    background: #CA7C4E;
+    color: #FFF;
+}
+
+.stats {
+    float: left;
+}
+.box {
+    box-sizing: border-box;
+    width: 120px;
+    height: 99px;
+    background: #F5E8DF;
+    text-align: center;
+    padding-top: 28px;
+    transition: all .4s ease-in-out;
+}
+.box:hover {
+    background: #E1CFC2;
+    cursor: pointer;
+}
+.box:nth-child(2) {
+    margin: 1px 0;
+}
+
+span {
+    display: block;
+}
+
+span.value {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+span.parameter {
+    font-size: 12px;
+}
