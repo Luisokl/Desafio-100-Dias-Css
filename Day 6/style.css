@@ -1,0 +1,262 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+root: {
+  --blue: #5F98CD;
+  --blue-dark: #264057;
+  --blue-light: #B2DAFF;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+  overflow: hidden;
+  background-color: #264057;
+  color: #666666;
+  border: 1px solid;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+  background: #FFF;
+  border-radius: 3px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+  transition: all .5s ease-in-out;
+}
+
+.show-menu {
+  transform: translatex(150px);
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  background: #5F98CD;
+}
+
+.menuIcon {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  top: 23px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.dashTop:hover,
+.dashCircle:hover,
+.dashBottom:hover {
+  background-color: #FFF;
+}
+
+.dashTop {
+  background-color: #B2DAFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+}
+
+.dashCircle {
+  background-color: #B2DAFF;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  transition: all .2s ease-in-out;
+}
+
+.dashBottom {
+  background-color: #B2DAFF;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: 29px;
+  height: 3px;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.search {
+  position: absolute;
+  top: 13px;
+  right: 55px;
+  width: 75%;
+  height: 34px;
+  box-sizing: border-box;
+  border-radius: 17px;
+  border: none;
+  padding: 0 17px;
+  font-size: 13px;
+  color: #666;
+  transition: all .3s ease-in-out;
+  transform: translatex(15px);
+  opacity: 0;
+  pointer-events: none;
+}
+.search:focus {
+  outline: none;
+}
+.search.active {
+  opacity: 1;
+  transform: translatex(0);
+  pointer-events: all;
+}
+
+.searchIcon {
+  position: absolute;
+  font-size: 39px;
+  color: #B2DAFF;
+  top: 18px;
+  right: 20px;
+  cursor: pointer;
+}
+.fa-search:before {
+  font-size: 23px;
+}
+.searchIcon:hover {
+  color: #FFF;
+}
+
+.notifications {
+  position: relative;
+  height: 240px;
+  margin: 0;
+}
+
+.line {
+  position: absolute;
+  top: -25px;
+  left: 27px;
+  bottom: 0;
+  width: 3px;
+  background-color: #EBEBEB;
+}
+
+.notification {
+  position: relative;
+  z-index: 2;
+  margin: 25px 20px 25px 43px;
+}
+.notification:hover {
+  color: #5F98CD;
+  cursor: pointer;
+}
+
+.notification:nth-child(2) {
+  animation: here-am-i 0.5s ease-out 0.4s;
+  animation-fill-mode: both;
+}
+.notification:nth-child(3) {
+  animation: here-am-i 0.5s ease-out 0.4s;
+  animation-fill-mode: both;
+}
+.notification:nth-child(4) {
+  animation: here-am-i 0.5s ease-out 0.4s;
+  animation-fill-mode: both;
+}
+
+
+.circle {
+  box-sizing: border-box;
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  background-color: #FFF;
+  border: 2px solid #5F98CD;
+  box-shadow: 0 0 0 3px #FFF;
+  border-radius: 50%;
+  top: 5px;
+  left: -20px;
+}
+
+.time {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+
+p {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.menu {
+  position: absolute;
+  width: 170px;
+  height: 270px;
+  background-color: #43627D;
+  border-radius: 3px;
+  top: 65px;
+  left: 50px;
+  transform: translateX(20px);
+  transition: all .5s ease-in-out;
+}
+
+.menu.active {
+  box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.2);
+  transform: translatex(0);
+}
+
+.menu ul {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.menu li {
+  color: #93B2CD;
+  margin: 0;
+  padding: 15px 17px;
+  list-style: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.menu li:hover {
+  color: #FFF;
+  background-color: #385269;
+}
+
+
+span {
+  margin-right: 8px;
+}
+
+@keyframes here-am-i {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
